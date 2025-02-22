@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 //middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // Replace with your React app's URL
+    origin: ["http://localhost:5173","https://timetide.netlify.app"], // Replace with your React app's URL
     credentials: true, // Allow credentials (cookies)
   })
 );

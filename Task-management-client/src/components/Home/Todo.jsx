@@ -51,7 +51,7 @@ const Todo = () => {
         }`}
       >
         <div className="flex justify-between items-center mb-3">
-          <h2 className="text-lg font-bold">To Do</h2>
+          <h2 className="text-2xl text-teal-500 font-bold">To Do</h2>
           <button className="text-gray-600 hover:text-gray-800">⚙</button>
         </div>
         <DragDropContext onDragEnd={onDragEnd}>

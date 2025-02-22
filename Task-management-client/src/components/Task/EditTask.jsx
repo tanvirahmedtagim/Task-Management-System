@@ -79,7 +79,11 @@ const EditTask = () => {
           />
         </div>
 
-        <div className="w-full lg:w-2/3 p-6 bg-white shadow-lg rounded-lg">
+        <div
+          className={`w-full lg:w-2/3 p-6 bg-white shadow-lg rounded-lg ${
+            dark ? "bg-gray-900 text-white" : "text-gray-900"
+          }`}
+        >
           <h2 className="text-2xl font-bold mb-4">Edit Task</h2>
           <form onSubmit={handleUpdate} className="space-y-4">
             <div>
@@ -117,7 +121,7 @@ const EditTask = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700"
+              className="w-full bg-teal-600 text-white p-2 rounded-lg hover:bg-teal-700"
             >
               Update Task
             </button>

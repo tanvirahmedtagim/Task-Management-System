@@ -181,7 +181,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {showMobileMenu && (
-          <div className="lg:hidden absolute left-0 top-full w-40 bg-gray-200 p-2 shadow-md rounded-md">
+          <div className="lg:hidden absolute left-0 top-full w-40 bg-teal-700 p-2 shadow-md rounded-md">
             {menu}
           </div>
         )}

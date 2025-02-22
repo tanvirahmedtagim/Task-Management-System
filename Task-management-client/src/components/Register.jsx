@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { FcGoogle } from "react-icons/fc";
-// import sideLogo from "../../assets/register.jpg";
+import sideLogo from "../assets/register.jpg";
 import { AuthContext } from "../provider/AuthProvider";
 import useAuth from "../hooks/useAuth";
 
@@ -129,7 +129,7 @@ const Register = () => {
           }`}
         >
           <img
-            // src={sideLogo}
+            src={sideLogo}
             alt="Side Illustration"
             className="w-full h-full"
           />

@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Swal from "sweetalert2";
-// import sideLogo from "../../assets/login.jpg";
+import sideLogo from "../assets/login.jpg";
 import { useForm } from "react-hook-form";
 import { useContext, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
@@ -138,7 +138,7 @@ const Login = () => {
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full mb-6 md:mb-0 md:flex items-center justify-center bg-gray-100">
           <img
-            // src={sideLogo}
+            src={sideLogo}
             alt="Side Illustration"
             className="w-full h-full"
           />
@@ -279,7 +279,7 @@ const Login = () => {
                 onClick={loginAsAdmin}
                 className="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600"
               >
-                Login as Admin
+                Login
               </button>
             </div>
           </div>

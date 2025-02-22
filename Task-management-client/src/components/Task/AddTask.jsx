@@ -51,7 +51,11 @@ const AddTask = () => {
 
   return (
     <>
-      <div className="flex mt-9 flex-col lg:flex-row items-center lg:items-start p-6">
+      <div
+        className={`flex mt-9 flex-col lg:flex-row items-center lg:items-start p-6 ${
+          dark ? "bg-gray-900 text-white" : "text-gray-900"
+        }`}
+      >
         {/* Image Section */}
         <div className="w-full lg:w-1/3 mb-6 lg:mb-0">
           <img
@@ -112,7 +116,7 @@ const AddTask = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700"
+              className="w-full bg-teal-600 text-white p-2 rounded-lg hover:bg-teal-700"
             >
               Add Task
             </button>
