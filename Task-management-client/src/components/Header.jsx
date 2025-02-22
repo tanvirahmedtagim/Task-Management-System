@@ -64,26 +64,31 @@ const Header = () => {
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `text-2xl ${isActive ? "text-info" : "text-gray-600"} space-y-3`
+          `text-xl justify-center items-center flex ${
+            isActive ? "text-info hover:text-white" : "text-white hover:text-info"
+          } space-y-3`
         }
       >
         <FaHome />
+        Home
       </NavLink>
       <NavLink
         to="/add-Task"
         className={({ isActive }) =>
-          `text-2xl ${isActive ? "text-info" : "text-gray-600"} `
+          `text-xl justify-center items-center flex gap-1 ${
+            isActive ? "text-info" : "text-white"
+          } `
         }
       >
-        <BiSolidMessageSquareAdd />
+        <BiSolidMessageSquareAdd /> Add Task
       </NavLink>
     </>
   );
 
   return (
     <div
-      className={`fixed top-0 z-50 w-full bg-[#008080] dark:bg-teal-700 border-gray-200 transition-all py-3  ${
-        dark ? "bg-gray-900 text-gray-50" : "bg-gray-100 text-gray-900"
+      className={`fixed top-0 z-50 w-full bg-[#008080]  border-gray-200 transition-all py-3  ${
+        dark ? "bg-teal-700 text-gray-50" : " text-gray-900"
       }`}
     >
       {" "}
@@ -98,8 +103,8 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-red-800">
-            TaskStorm
+          <Link to="/" className="text-2xl font-bold uppercase text-white">
+            Time&Tide
           </Link>
 
           {/* Desktop Menu */}
